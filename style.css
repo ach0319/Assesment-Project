@@ -1,0 +1,95 @@
+/* styling header */
+#title {
+  font-family: rockwell;
+  font-weight: bold;
+  color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#nav-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+li {
+  float: left;
+  list-style-type: none;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.nav-link{
+  font-family: rockwell;
+  font-weight: bold;
+  color: blue;
+  text-decoration: none;
+}
+/* Animates button on hover */
+
+button {
+background: gray;
+color: white;
+border: 2px solid white;
+font-size: 20px;
+letter-spacing: 2px;
+padding: 10px 55px;
+text-transform: uppercase;
+cursor: pointer;
+display: inline-block;
+margin: 15px 100px;
+/* animate and time the transitions*/
+-webkit-transition: all 0.4s;
+-moz-transition: all 0.4s;
+transition: all 0.4s;
+}
+
+/* question container */
+
+#container {
+background: white;
+      color: black ;
+      font-family: rockwell;
+      border-radius: 1em;
+      border: 1px solid blue;
+      padding: 5em;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%) 
+}
+
+#questionNumber {
+text-align: center;
+padding: 3px;
+font-weight: bold;
+
+}
+
+#question {
+padding: 5px;
+width: 400px;
+}
+
+#definition {
+padding: 5px;
+width: 400px;
+font-style: italic;
+}
+
+#A{
+border: 1px solid black;
+padding:5px;
+text-align: center;
+font-weight: bold;
+}
+
+#B{
+border: 1px solid black;
+padding: 5px;
+text-align: center;
+font-weight: bold;
+}
