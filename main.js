@@ -24,7 +24,7 @@ const myQuestions = [
   },
   {
     number: 'Question 2/9',
-    question: "Do you have health insurance",
+    question: "Do you have health insurance?",
     choiceA: "Yes",
     choiceB: "No",
     correct: ['A', 'B']
@@ -87,7 +87,10 @@ document.getElementById('next').addEventListener('click', () => {
 
   section.textContent = myQuestions[i].number; i++
   
+  
 });
+
+
 
 let j = 0;
 const quest = document.getElementById('question');
@@ -121,7 +124,7 @@ document.getElementById('next').addEventListener('click', () => {
   
   choice2.textContent = myQuestions[l].choiceB; l++
   
-});
+}); 
 
 // start Assesment Page that has a start quiz button
 
@@ -132,5 +135,43 @@ document.getElementById('start').addEventListener('click', () => {
 // choose a response and have it be collected to quantify and turn into results page/click next button when response selected otherwise it is not active
 //last question has a submit button that initiates the adding up off the points and based off of information a results page
 // previous button that allows you to navigate to prior questions
+/* let a = 0;
+document.getElementById('previous').addEventListener('click', () => {
+
+  questionNumber.textContent = myQuestions[a].number; a--
+  
+});
+
+let b = 0;
+
+document.getElementById('previous').addEventListener('click', () => {
+
+  question.textContent = myQuestions[b].question; b--
+  
+  
+});
+
+let c = 0;
+document.getElementById('previous').addEventListener('click', () => {
+  
+  def.textContent = myQuestions[c].definition; c--
+  
+});
+
+let d = 0;
+
+document.getElementById('previous').addEventListener('click', () => {
+  
+  choicesA.textContent = myQuestions[d].choiceA; d--
+  
+});
+
+let e = 0;
+document.getElementById('previous').addEventListener('click', () => {
+  
+  choicesB.textContent = myQuestions[e].choiceB; e--
+  
+});
+*/
 
 //responsive web design (fits every viewport on any device and have answer buttons collapse into a column in small sizes

@@ -18,15 +18,20 @@
       <button id="start">Start</button>
     </div>
     <div id="quiz" style="display:none;">
-      <div id="questionNumber"></div>
+      <div id="questionNumber">
+        <p id="disclaimer">The information on health.gov is not meant to take the place of health care or services you may need. <br>
+          Please see your primary health care provider about any personal health concerns.</p>
+      </div>
       <div id="question"></div>
       <div id="definition"></div>
       <div id="choices">
         <div id="A"></div>
         <div id="B"></div>
       </div>
-      <button id="previous" >Previous</button>
-      <button id="next">Next</button>
+      <div id="buttons">
+        <button id="previous" >Previous</button>
+        <button id="next" onclick="loopArray()">Next </button>
+      </div>
     </div>
   
   

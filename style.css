@@ -29,21 +29,45 @@ li {
 }
 /* Animates button on hover */
 
-button {
-background: gray;
+#cover button {
+  background: gray;
 color: white;
 border: 2px solid white;
-font-size: 20px;
+font-size: 1em;
 letter-spacing: 2px;
-padding: 10px 55px;
+padding: 1em;
 text-transform: uppercase;
 cursor: pointer;
-display: inline-block;
-margin: 15px 100px;
+display: block;
+margin-right: auto;
+margin-left: auto;
 /* animate and time the transitions*/
 -webkit-transition: all 0.4s;
 -moz-transition: all 0.4s;
 transition: all 0.4s;
+}
+#buttons  button {
+background: gray;
+color: white;
+border: 2px solid white;
+font-size: .75em;
+letter-spacing: 2px;
+padding: .75em;
+text-transform: uppercase;
+cursor: pointer;
+display: inline-block;
+/* animate and time the transitions*/
+-webkit-transition: all 0.4s;
+-moz-transition: all 0.4s;
+transition: all 0.4s;
+}
+
+#previous {
+ float: left;
+}
+
+#next {
+  float: right;
 }
 
 /* question container */
@@ -69,6 +93,14 @@ font-weight: bold;
 
 }
 
+#disclaimer {
+ display: block;
+ margin-right: auto;
+ margin-left: auto;
+
+  font-weight: bold;
+}
+
 #question {
 padding: 5px;
 width: 400px;
@@ -81,14 +113,12 @@ font-style: italic;
 }
 
 #A{
-border: 1px solid black;
 padding:5px;
 text-align: center;
 font-weight: bold;
 }
 
 #B{
-border: 1px solid black;
 padding: 5px;
 text-align: center;
 font-weight: bold;
